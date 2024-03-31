@@ -1,0 +1,15 @@
+version: "3"
+services:
+  aws-cdk:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: aws-cdk
+    container_name: aws-cdk
+    tty: true
+    environment:
+      AWS_PROFILE: default
+    volumes:
+      - ./src:/src
+      - ~/.aws/credentials:/root/.aws/credentials:ro
+      - ~/.aws/config:/root/.aws/config:ro
