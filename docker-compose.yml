@@ -4,7 +4,6 @@ services:
     build:
       context: ./
       dockerfile: ./Dockerfile
-    image: aws-cdk
     container_name: aws-cdk
     tty: true
     environment:
