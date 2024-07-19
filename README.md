@@ -13,6 +13,7 @@ docker compose up -d
 ```sh
 ./login.sh
 # コンテナ内で下記を実行
+$ npm i
 $ cdk bootstrap
 ```
 
